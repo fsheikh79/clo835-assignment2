@@ -21,5 +21,5 @@ jobs:
           context: .
           push: true
           tags: |
-            faizansheikh11444/clo835-assignment2:0.2
+            faizansheikh11444/clo835-assignment2:0.3
             faizansheikh11444/clo835-assignment2:${{ github.sha }}
