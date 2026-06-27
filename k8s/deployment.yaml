@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: clo835-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: clo835-app
+  template:
+    metadata:
+      labels:
+        app: clo835-app
+    spec:
+      containers:
+        - name: clo835-app
+          image: faizansheikh11444/clo835-assignment2:0.2
+          ports:
+            - containerPort: 8080
